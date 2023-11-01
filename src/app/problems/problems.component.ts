@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Problem } from '../problem';
 
 @Component({
   selector: 'app-problems',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./problems.component.css']
 })
 export class ProblemsComponent {
-  problem = 'No coffee in the morning.'
+  problem: Problem = {
+    id: 1,
+    name: 'coffee',
+    description: 'There is no coffee in the morning.'
+  }
 }

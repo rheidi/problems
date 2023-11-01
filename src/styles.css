@@ -1,3 +1,11 @@
 body {
     background-color: #1D0F0F;
 }
+
+div, span {
+    color: #D4DBE2;
+}
+
+div > span {
+    color: darkgrey;
+}
