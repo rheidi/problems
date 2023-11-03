@@ -1,5 +1,5 @@
 export interface Problem {
     id: number
-    name: string
+    type: string
     description: string
 }

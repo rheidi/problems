@@ -1,3 +1,8 @@
-<h2>{{ problem.id }} Details</h2>
-<div><span>Type: </span>{{ problem.name | uppercase }}</div>
-<div><span>Nature of the problem: </span>{{ problem.description }}</div>
+<h2>List of my problems</h2>
+<ul class="problems">
+    <li *ngFor="let problem of problems">
+        <div class="type"><span>Type: </span>{{ problem.type | uppercase }}</div>
+        <div class="description"><span>Nature of the problem: </span>{{ problem.description }}</div>
+    </li>
+  </ul>
+
